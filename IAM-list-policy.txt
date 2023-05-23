@@ -1,0 +1,56 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListGroupPolicies",
+                "iam:ListPoliciesGrantingServiceAccess",
+                "iam:ListInstanceProfileTags",
+                "iam:ListServiceSpecificCredentials",
+                "iam:ListUserPolicies",
+                "iam:ListMFADevices",
+                "iam:ListSigningCertificates",
+                "iam:ListInstanceProfiles",
+                "iam:ListSSHPublicKeys",
+                "iam:ListGroupsForUser",
+                "iam:ListOpenIDConnectProviderTags",
+                "iam:ListServerCertificateTags",
+                "iam:ListAttachedUserPolicies",
+                "iam:ListAttachedGroupPolicies",
+                "iam:ListMFADeviceTags",
+                "iam:GetLoginProfile",
+                "iam:ListUserTags",
+                "iam:ListAccessKeys"
+            ],
+            "Resource": [
+                "arn:aws:iam::717868877107:group/*",
+                "arn:aws:iam::717868877107:oidc-provider/*",
+                "arn:aws:iam::717868877107:instance-profile/*",
+                "arn:aws:iam::717868877107:mfa/*",
+                "arn:aws:iam::717868877107:server-certificate/*",
+                "arn:aws:iam::717868877107:user/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListPolicies",
+                "iam:ListSAMLProviders",
+                "iam:ListOpenIDConnectProviders",
+                "iam:ListServerCertificates",
+                "iam:ListCloudFrontPublicKeys",
+                "iam:ListAccountAliases",
+                "iam:ListRoles",
+                "iam:ListUsers",
+                "iam:ListGroups",
+                "iam:ListSTSRegionalEndpointsStatus",
+                "iam:ListVirtualMFADevices",
+                "iam:GetAccountSummary"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

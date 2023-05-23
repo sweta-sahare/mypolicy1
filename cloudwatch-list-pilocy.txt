@@ -1,0 +1,24 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "cloudwatch:ListTagsForResource",
+            "Resource": [
+                "arn:aws:cloudwatch:*:717868877107:alarm:*",
+                "arn:aws:cloudwatch:*:717868877107:insight-rule/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:ListMetricStreams",
+                "cloudwatch:ListDashboards",
+                "cloudwatch:ListMetrics"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
